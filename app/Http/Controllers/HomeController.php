@@ -21,4 +21,8 @@ class HomeController extends Controller
     public function success() {
         return view('pages.success');
     }
+
+    public function dashboard() {
+        return view('pages.Admin.dashboard');
+    }
 }

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,3 +29,7 @@ Route::post('/login', 'AuthController@login');
 Route::get('/forgot_password_page', 'AuthController@forgotPasswordPage')->name('forgotPassword');
 
 Route::post('/logout', 'AuthController@logout')->name('logout');
+
+ Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
+
+
