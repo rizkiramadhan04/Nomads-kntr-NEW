@@ -42,6 +42,12 @@ Route::post('/logout', 'AuthController@logout')->name('logout');
 
 Route::prefix('admin')->namespace('Admin')->group(function() {
     Route::get('/', 'DashboardController@index');
+
+    Route::get('/gallery', 'GalleryController@index')->name('gallery');
+
+    Route::get('/transaction', 'TransactionController@index')->name('transaction');
+
+    Route::get('/travel-package', 'TravelPackageController@index')->name('travel-package');
 });
 
 //page admin
