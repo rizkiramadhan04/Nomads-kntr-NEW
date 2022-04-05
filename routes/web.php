@@ -15,10 +15,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//page utama
+
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/detail', 'HomeController@detail')->name('detail');
 Route::get('/checkout', 'HomeController@checkout')->name('checkout');
 Route::get('/success', 'HomeController@success')->name('success');
+
+//page utama
+
+//authentication
 
 Route::get('/registerPage', 'AuthController@regisPage')->name('register');
 Route::post('/register', 'AuthController@register');
@@ -30,6 +36,14 @@ Route::get('/forgot_password_page', 'AuthController@forgotPasswordPage')->name('
 
 Route::post('/logout', 'AuthController@logout')->name('logout');
 
- Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
+//authentication
+
+//page admin
+
+Route::prefix('admin')->namespace('Admin')->group(function() {
+    Route::get('/', 'DashboardController@index');
+});
+
+//page admin
 
 
