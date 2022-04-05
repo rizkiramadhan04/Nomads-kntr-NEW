@@ -1,7 +1,7 @@
  <div class="container">
       <nav class="row navbar navbar-expand-lg navbar-light bg-white">
         <div class="navbar-nav ml-auto mr-auto mr-sm-auto mr-lg-0 mr-md-auto">
-          <a class="navbar-brand" href="{{ route('') }}">
+          <a class="navbar-brand" href="{{ url('/') }}">
             <img src="{{ asset('frontend/images/logo.png') }}" alt="" />
           </a>
         </div>

@@ -203,7 +203,7 @@
               </div>
               <div class="join-container">
                 <a
-                  href="{{ route('') }}success.html"
+                  href="{{ route('success') }}success.html"
                   class="btn btn-block btn-join-now mt-3 py-2"
                   >I Have Made Payment</a
                 >
